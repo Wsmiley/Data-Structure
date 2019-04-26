@@ -18,7 +18,7 @@ public class DoublyList<T> {
 	public DoubleNode<T>head;
 
 	public DoublyList(){
-		this.head=new DoubleNode<T>();
+		this.head=new DoubleNode<T>(null,null,null);
 	}
 
 	public DoublyList(T[]values){
@@ -29,12 +29,13 @@ public class DoublyList<T> {
 			rear=rear.next;
 		}
 	}
+
 	public DoublyList(DoublyList<T>list){
 		this();
 		DoubleNode<T>rear=this.head;
 		DoubleNode<T>p=list.head.next;
 		while(p!=null){
-			rear.next=new DoubleNode(rear,p.data,null);
+			rear.next=new DoubleNode<T>(rear,p.data,null);
 			rear=rear.next;
 			p=p.next;
 		}
@@ -63,7 +64,6 @@ public class DoublyList<T> {
 		return str+")";
 	}
 
-	//之后插入
 	public DoubleNode<T>insert(int i,T x){
 		if(x==null){
 			throw new NullPointerException("x==null");
@@ -72,19 +72,16 @@ public class DoublyList<T> {
 		for(int j=0;front.next!=null&&j<i;j++){
 		 	front=front.next;
 		}
-		DoubleNode<T>p=new DoubleNode<T>(front,x,front.next);
-		if(front.next==null){
-			front.next=p;
-		}else {
-			front.next.prev = p;
-			front.next = p;
-		}
+		DoubleNode<T>p=new DoubleNode<T>(front.prev,x,front);
+		front.prev.next = p;
+		front.prev = p;
+
 		return front;
 	}
 
-	public DoubleNode<T>insert(T x){
-		return insert(Integer.MAX_VALUE,x);
-	}
+//	public DoubleNode<T>insert(T x){
+//		return insert(Integer.MAX_VALUE,x);
+//	}
 
 
 	public T remove(int i){
@@ -96,14 +93,6 @@ public class DoublyList<T> {
 			T old=front.data;
 			front.prev.next=front.next;
 			front.next.prev=front.prev;
-			front.prev=null;
-			front.next=null;
-			return old;
-		}
-		if(front.next==null){
-			T old=front.data;
-			front.prev.next=null;
-			front.prev=null;
 			return old;
 		}
 		return null;
@@ -126,7 +115,6 @@ public class DoublyList<T> {
 		return str+")";
 	}
 
-
 	public void removeAllMatched(DoublyList<T>pattern){
 		if (pattern.isEmpty()){
 			return;
@@ -144,8 +132,10 @@ public class DoublyList<T> {
 			}else {
 				start.next.prev=null;
 				start.next=p;
-				p.prev.next=null;
-				p.prev=start;
+				if(p!=null) {
+					p.prev.next = null;
+					p.prev = start;
+				}
 			}
 		}
 	}
@@ -153,17 +143,13 @@ public class DoublyList<T> {
 	public static void main(String[] args) {
 		String values[] = { "A", "B", "C", "D", "E", "F" };
 		String values1[] = { "C", "D","E"};
-		DoublyList<String>p=new DoublyList(values);
+		DoublyList<String>p=new DoublyList<String>(values);
+		DoublyList<String>q=new DoublyList<String>(values1);
 		System.out.println("p:"+p.toString());
-		DoublyList<String>q=new DoublyList(values1);
 		System.out.println("q:"+q.toString());
 
-		System.out.println("p:"+p.toString());
-//		p.insert(4,"H");
-		System.out.println("p:"+p.toString());
-//		System.out.println(p.remove(3));
-
 		p.removeAllMatched(q);
+		System.out.println("p:"+p.toString());
 		System.out.println("p:"+p.toPreviousString());
 
 	}

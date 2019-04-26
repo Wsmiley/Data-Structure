@@ -18,6 +18,7 @@ public final class SeqQueue<T> implements Queue<T> {
 
 	private Object element[];
 	private int front,rear;
+
 	public SeqQueue(int lenght){
 		if(lenght<64)
 			lenght=64;

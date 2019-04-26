@@ -21,6 +21,7 @@ public class CirDoublyList<T> extends DoublyList<T>{
 		this.head.next=head;
 		this.head.prev=head;
 	}
+
 	public CirDoublyList(T[] values){
 		this();
 		DoubleNode<T>rear=this.head;
@@ -86,6 +87,20 @@ public class CirDoublyList<T> extends DoublyList<T>{
 		return str+")";
 	}
 
+	public String toPreviousString(){
+		DoubleNode<T>p=this.head.prev;
+		String str;
+		str=getClass().getName()+"(";
+		while(p!=this.head){
+			str+=p.data.toString();
+			p=p.prev;
+			if(p!=this.head){
+				str+=",";
+			}
+		}
+		return str+")";
+	}
+
 
 	public static void main(String[] args) {
 		String values[] = { "A", "B", "C", "D", "F", "G" };
@@ -97,6 +112,7 @@ public class CirDoublyList<T> extends DoublyList<T>{
 		System.out.println(p.remove(2));
 
 		System.out.println(p.toString());
+		System.out.println(p.toPreviousString());
 	}
 }
  

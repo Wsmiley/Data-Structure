@@ -14,6 +14,7 @@
  * @create 2019/3/21
  * @since 1.0.0
  */
+
 public class Node<T> {
 
 	public T data;
@@ -28,13 +29,9 @@ public class Node<T> {
 		this(null,null);
 	}
 
-
 	public String toString(){
 		return this.data.toString();
 	}
 
-	public static void main(String[] args) {
-
-	}
 }
  

@@ -14,10 +14,11 @@
  * @create 2019/3/21
  * @since 1.0.0
  */
+
 public class SeqList<T>extends Object{
 	protected Object[] element;
 	protected int n;
-	//构造方法
+
 	public SeqList(int length){
 		this.element=new Object[length];
 		this.n=0;
@@ -35,17 +36,16 @@ public class SeqList<T>extends Object{
 		this.n=element.length;
 	}
 
-	//判断是否为空的顺序表
 	public boolean isEmpty(){
 		return this.n==0;
 	}
 
-	//顺序表大小
+
 	public int size(){
 		return this.n;
 	}
 
-	//在顺序表中得到该值
+
 	public T get(int i){
 		 if(i>=0&&i<this.n){
 		 	return (T)this.element[i];
@@ -53,7 +53,7 @@ public class SeqList<T>extends Object{
 		 return null;
 	}
 
-	//在顺序表i中设置为x
+
 	public void set(int i,T x){
 		if (x==null){
 			throw new NullPointerException();
@@ -77,7 +77,6 @@ public class SeqList<T>extends Object{
 		return str+")";
 	}
 
-	//插入
 	public int insert(int i,T x){
 		if(x==null){
 			throw new NullPointerException();
@@ -88,14 +87,14 @@ public class SeqList<T>extends Object{
 		if(i>this.n){
 			i=this.n;
 		}
-		Object[] source=this.element;//构造新的链表，source引用element
-		if(this.n==element.length){//数组满了
-			this.element=new Object[source.length*2];//申请出source*2大的表，此时的element不属于原来的element
+		Object[] source=this.element;
+		if(this.n==element.length){
+			this.element=new Object[source.length*2];
 			for(int j=0;j<i;j++){
-				this.element[j]=source[j];//把source引用之前的element赋值给新的element
+				this.element[j]=source[j];
 			}
 		}
-		for(int j=this.n-1;j>=i;j--){//往后移一位
+		for(int j=this.n-1;j>=i;j--){
 			this.element[j+1]=source[j];
 		}
 		this.element[i]=x;
@@ -104,10 +103,10 @@ public class SeqList<T>extends Object{
 	}
 
 	public int insert(T x){
-		return this.insert(this.n,x);//默认放在最后
+		return this.insert(this.n,x);
 	}
 
-	//删除
+
 	public T remove(int i){
 		if(this.n>0&&i<this.n){
 			T old=(T)this.element[i];
@@ -121,13 +120,13 @@ public class SeqList<T>extends Object{
 		return null;
 
 	}
-	//清除
+
 	public void clear()
 	{
 		this.n=0;
 	}
 
-	//倒序
+
 	public String toPreviouString(){
 		String str=this.getClass().getName()+"(";
 		if(this.n>0){
@@ -139,7 +138,6 @@ public class SeqList<T>extends Object{
 		return str+")";
 	}
 
-	//查找相同的元素，返回在第几位
 	public int search(T key){
 		for(int i=0;i<this.n;i++){
 			if(key.equals(this.element[i])){
@@ -149,7 +147,6 @@ public class SeqList<T>extends Object{
 		return -1;
 	}
 
-	//两个顺序表是否相等:元素相等并且长度相等
 
 	public boolean equals(Object obj){
 		if (this==obj){
@@ -168,12 +165,11 @@ public class SeqList<T>extends Object{
 		return false;
 	}
 
-	//判断是否包含关键字为key元素
 	public boolean contains(T key){
 		return this.search(key)!=-1;
 	}
 
-	//深拷贝
+
 	public SeqList(SeqList<?extends T>list){
 		this.n=list.n;
 		this.element=new Object[list.element.length];

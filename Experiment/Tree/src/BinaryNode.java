@@ -17,13 +17,13 @@
 public class BinaryNode<T> {
 	public T data;
 	public BinaryNode<T>left,right;
-	public BinaryNode(T data,BinaryNode<T>left,BinaryNode<T>right){
+	public BinaryNode(BinaryNode<T>left,T data,BinaryNode<T>right){
 		this.data=data;
 		this.left=left;
 		this.right=right;
 	}
 	public BinaryNode(T data){
-		this(data,null,null);
+		this(null,data,null);
 	}
 	public String toString(){
 		return this.data.toString();
@@ -32,6 +32,11 @@ public class BinaryNode<T> {
 	public boolean isLeft(){
 		return this.left==null&&this.right==null;
 	}
-
+	public BinaryNode<T>getLeft(){
+		return this.left;
+	}
+	public BinaryNode<T>getRight(){
+		return this.right;
+	}
 }
  

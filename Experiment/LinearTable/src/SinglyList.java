@@ -150,14 +150,39 @@ public class SinglyList<T> {
 	}
 
 	public Node<T> search(T key) {
+		Node<T>p=this.head.next;
+		while(p!=null){
+			if(key==p.data.toString()){
+				return p;
+			}
+			p=p.next;
+		}
 		return null;
 	}
 
 	public boolean contains(T key) {
+		Node<T>p=this.head.next;
+		while (p!=null){
+			if (key==p.data.toString()){
+				return true;
+			}
+			p=p.next;
+		}
 		return false;
 	}
 
 	public T remove(T key) {
+		Node<T>front=this.head;
+		Node<T>p=this.head.next;
+		while(p!=null){
+			if(key==p.data.toString()){
+				T old=p.data;
+				front.next=p.next;
+				return old;
+			}
+			front=front.next;
+			p=p.next;
+		}
 		return null;
 	}
 
@@ -171,11 +196,11 @@ public class SinglyList<T> {
 		System.out.println(p.toString());
 		p.insert(11,"G");
 		System.out.println(p.toString());
-		p.remove(6);
+		System.out.println("remove :"+p.remove(6));
+		System.out.println("remove :"+p.remove("G"));
 		System.out.println(p.toString());
 		p.reverse(p);
 		System.out.println(p.toString());
-
 		SinglyList<String>q=new SinglyList<String>(values1);
 		System.out.println(SinglyList.isDifferent(q));
 		System.out.println(SinglyList.isDifferent(p));

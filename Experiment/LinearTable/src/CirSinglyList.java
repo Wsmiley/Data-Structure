@@ -20,7 +20,6 @@ public class CirSinglyList<T> extends SinglyList<T> {
 	public CirSinglyList() {
 		this.head = new Node<T>();
 		this.head.next = this.head;
-		this.tail = null;
 	}
 
 	public CirSinglyList(T[] value) {
@@ -30,7 +29,6 @@ public class CirSinglyList<T> extends SinglyList<T> {
 			rear.next = new Node<T>(value[i], null);
 			rear = rear.next;
 		}
-		this.tail = rear;
 		rear.next = this.head;
 	}
 
@@ -41,10 +39,10 @@ public class CirSinglyList<T> extends SinglyList<T> {
 	// 得到第i个节点
 	public T get(int i) {
 		Node<T> p = this.head.next;
-		for (int j = 0; j < i && p != this.tail.next; j++) {
+		for (int j = 0; j < i && p !=this.head; j++) {
 			p = p.next;
 		}
-		return (i >= 0 && p != this.tail.next) ? p.data : null;
+		return (i >= 0 && p != this.head) ? p.data : null;
 	}
 
 	// 深拷贝
@@ -58,7 +56,6 @@ public class CirSinglyList<T> extends SinglyList<T> {
 			rear = rear.next;
 			p = p.next;
 		}
-		this.tail = rear;
 		rear.next = this.head;
 	}
 
@@ -72,7 +69,6 @@ public class CirSinglyList<T> extends SinglyList<T> {
 			rear = rear.next;
 			p = p.next;
 		}
-		this.tail = rear;
 		rear.next = head;
 	}
 
@@ -101,7 +97,7 @@ public class CirSinglyList<T> extends SinglyList<T> {
 		}
 		if (list instanceof CirSinglyList<?>) {// 所有CirSinglyList的父类
 			CirSinglyList<T> p = (CirSinglyList<T>) list;
-			for (int i = 0; p.head.next != p.tail.next; i++) {
+			for (int i = 0; p.head.next != p.head; i++) {
 				if (!(this.get(i).equals(p.get(i)))) {
 					return false;
 				}
@@ -135,7 +131,7 @@ public class CirSinglyList<T> extends SinglyList<T> {
 		for (int j = 0; j < i - 1 && front.next != this.head; j++) {
 			front = front.next;
 		}
-		list.tail.next = front.next;
+		list.head = front.next;
 		front.next = list.head.next;
 		list.head.next = list.head;
 
@@ -179,12 +175,6 @@ public class CirSinglyList<T> extends SinglyList<T> {
 		if (i >= 0 && front.next != head) {
 			T old = front.next.data;
 			front.next = front.next.next;
-			if (front.next != this.head) {
-				this.tail = front.next;
-			} else {
-				this.tail = front;
-			}
-			System.out.println(this.tail.data);
 			return old;
 		}
 		return null;
@@ -261,18 +251,18 @@ public class CirSinglyList<T> extends SinglyList<T> {
 		String values[] = { "A", "B", "C", "D", "F", "G" };
 		String values1[] = { "H", "I", "J", "K" };
 ////
-//		CirSinglyList<String> p = new CirSinglyList<String>(values);
-//		System.out.println(p.toString());
-//		CirSinglyList<String> q = new CirSinglyList<String>(p);
-//		System.out.println(p.toString());
-//		q.insert("H");
-//		System.out.println(q.toString());
-//		CirSinglyList<String> f = new CirSinglyList<String>(values1);
-//		SinglyList<String> a = new SinglyList<String>(values1);
-//		System.out.println(a.toString());
-//		q.print();
-//		CirSinglyList<String> b = new CirSinglyList<String>(a);
-//		a.insert("L");
+		CirSinglyList<String> p = new CirSinglyList<String>(values);
+		System.out.println(p.toString());
+		CirSinglyList<String> q = new CirSinglyList<String>(p);
+		System.out.println(p.toString());
+		q.insert("H");
+		System.out.println(q.toString());
+		CirSinglyList<String> f = new CirSinglyList<String>(values1);
+		SinglyList<String> a = new SinglyList<String>(values1);
+		System.out.println(a.toString());
+		CirSinglyList<String> b = new CirSinglyList<String>(a);
+		a.insert("L");
+//		System.out.println(p.containsAll(q));
 //		System.out.println(b.toString());
 //		System.out.println(a.toString());
 //
@@ -299,7 +289,7 @@ public class CirSinglyList<T> extends SinglyList<T> {
 //		String values3[] = { "A","A"};
 		CirSinglyList<String> test = new CirSinglyList(values2);
 		CirSinglyList<String> test1 = new CirSinglyList(values3);
-		//System.out.println(test.containsAll(test1));
+		System.out.println(test.containsAll(test1));
 		System.out.println("test:" + test.toString());
 		System.out.println("test1:" + test1.toString());
 		test.removeAllMatched(test1);

@@ -32,6 +32,9 @@ public class LinkedStack<T> implements Stack<T>{
 	public T pop(){
 		return this.list.remove(0);
 	}
+	public void clear(){
+		list.clear();
+	}
 
 	public static void main(String[] args) {
 
