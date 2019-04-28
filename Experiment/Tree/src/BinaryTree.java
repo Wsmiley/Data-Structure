@@ -85,21 +85,6 @@ public class BinaryTree<T> {
 			parent.left=null;
 		else parent.right=null;
 	}
-	public void clear(){
-		this.root=null;
-	}
-	//先根次序遍历,递归
-	public void preorder(){
-		preorder(this.root);
-		System.out.println();
-	}
-	private void preorder(BinaryNode<T>p){
-		if(p!=null){
-			System.out.print(p.data.toString()+"");
-			preorder(p.left);
-			preorder(p.right);
-		}
-	}
 
 	public String toString(){
 		return toString(this.root);
@@ -110,6 +95,43 @@ public class BinaryTree<T> {
 		}
 		return p.data.toString()+""+toString(p.left)+toString(p.right);//递归调用
 	}
+
+	public void clear(){
+		this.root=null;
+	}
+
+	//先根次序遍历,递归
+	public void preorder(){
+		preorder(this.root);
+		System.out.println();
+	}
+
+	private void preorder(BinaryNode<T>p){
+		if(p!=null){
+			System.out.print(p.data.toString()+"");
+			preorder(p.left);
+			preorder(p.right);
+		}
+	}
+
+	public void preoderTraverse(){
+		System.out.println("先根次序遍历（非递归）");
+		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
+		BinaryNode<T>p=this.root;
+		while(p!=null||!stack.isEmpty()){
+			if (p!=null){
+				System.out.print(p.data+"");
+				stack.push(p);
+				p=p.left;
+			}else {
+				System.out.print("^");
+				p=stack.pop();//返回父结点
+				p=p.right;
+			}
+		}
+	}
+
+
 	//中根次序遍历
 	public void inorder(){
 		inorder(this.root);
@@ -118,10 +140,38 @@ public class BinaryTree<T> {
 	private void inorder(BinaryNode<T>p){
 		if(p!=null){
 			inorder(p.left);
-			System.out.println(p.data.toString()+"");
+			System.out.print(p.data.toString()+"");
 			inorder(p.right);
 		}
 	}
+
+	public void inorderTraverse(){
+		BinaryNode<T>p=this.root;
+		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
+		while(p!=null){
+			while (p!=null){
+				if(p.right!=null){
+					stack.push(p.right);
+				}
+				stack.push(p);
+				p=p.left;
+			}
+			p=stack.pop();
+			while(!stack.isEmpty()&&p.right==null){
+				System.out.print(p.data);
+				p=stack.pop();
+			}
+			System.out.print(p.data);
+			if(!stack.isEmpty()){
+				p=stack.pop();
+			}else {
+				p=null;
+			}
+		}
+	}
+
+
+
 	//后根次序遍历
 	public void postorder(){
 		postorder(this.root);
@@ -131,9 +181,32 @@ public class BinaryTree<T> {
 		if(p!=null){
 			postorder(p.left);
 			postorder(p.right);
-			System.out.println(p.data.toString()+"");
+			System.out.print(p.data.toString()+"");
 		}
 	}
+
+	public void postorderTraverse(){
+		BinaryNode<T>p=this.root;
+		BinaryNode<T>q=this.root;
+		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
+		while(p!=null){
+			for(;p.left!=null;p=p.left){
+				stack.push(p);
+			}
+			while (p!=null&&p.right==null||p.right==q){
+				System.out.print(p.data);
+				q=p;
+				if(stack.isEmpty()){
+					return;
+				}
+				p=stack.pop();
+			}
+			stack.push(p);
+			p=p.right;
+		}
+
+	}
+
 	//结点数
 	public int size(){
 		if(this.isEmpty()){
@@ -148,6 +221,7 @@ public class BinaryTree<T> {
 			return 0;
 		}
 	}
+
 	//高度
 	public int height(){
 		return height(this.root);
@@ -179,23 +253,6 @@ public class BinaryTree<T> {
 				System.out.print(",");
 				printGenList(p.right);
 				System.out.print(")");
-			}
-		}
-	}
-
-	public void preoderTraverse(){
-		System.out.println("先根次序遍历（非递归）");
-		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
-		BinaryNode<T>p=this.root;
-		while(p!=null||!stack.isEmpty()){
-			if (p!=null){
-				System.out.print(p.data+"");
-				stack.push(p);
-				p=p.left;
-			}else {
-				System.out.print("^");
-				p=stack.pop();//返回父结点
-				p=p.right;
 			}
 		}
 	}
@@ -262,12 +319,28 @@ public class BinaryTree<T> {
 		return null;
 	}
 
-	public void removeAllMatched(BinaryTree<T>pattern){
-		removeAllMatched(this.root,pattern.root);
-	}
 
-	private void removeAllMatched(BinaryNode<T>r,BinaryNode<T>parrtern){
-	}
+//	public void removeAllMatched(BinaryTree<T>pattern){
+//		removeAllMatched(this.root,pattern.root);
+//	}
+//
+//	private void removeAllMatched(BinaryNode<T>r,BinaryNode<T>parrtern){
+//
+//	}
+
+//	public BinaryNode<T>search(BinaryTree<T>pattern){
+//		if(pattern.isEmpty()){
+//			return null;
+//		}
+//		return search(this.root,pattern.root);
+//	}
+//
+//	public BinaryNode<T>search(BinaryNode<T>p,BinaryNode<T>q){
+//		if(p.data==q.data){
+//
+//		}
+//		return null;
+//	}
 
 	public static void main(String[] args) {
 		String[]prelist={"A","B","D",null,"G",null,null,null,"C","E",null,null,"F","H"};
@@ -275,19 +348,18 @@ public class BinaryTree<T> {
 		BinaryTree<String>bitree=new BinaryTree<String>(prelist);
 		BinaryTree<String>bitree1=new BinaryTree<String>(values);
 		System.out.println("PRE:"+bitree.toString());
-//		System.out.println("INORDER     ");bitree.inorder();
-//		System.out.println("rear     ");bitree.postorder();
-		System.out.println("pre:"+bitree1.toString());
-//		bitree.insert(bitree.root.left,"X",true);
-//		bitree.insert(bitree.root.right,"Y",false);
-//		bitree.insert("Z");
 		BinaryNode<String>z=new BinaryNode<>(null,"D",null);
 		BinaryNode<String>p=new BinaryNode<>(null,"B",null);
 		BinaryNode<String>q=new BinaryNode<>(p,"A",z);
 
-		System.out.println(bitree.parent(q));
 		System.out.println("bitree:"+bitree.search("F"));
 		bitree.printGenList();
+		bitree1.preorder();
+		bitree.postorder();
+		bitree.postorderTraverse();
+		System.out.println();
+		bitree.inorder();
+		bitree.inorderTraverse();
 	}
 }
  
