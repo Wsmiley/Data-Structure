@@ -89,6 +89,7 @@ public class BinaryTree<T> {
 	public String toString(){
 		return toString(this.root);
 	}
+
 	private String toString(BinaryNode<T>p){
 		if(p==null) {
 			return "^";//空子树标记
@@ -321,45 +322,62 @@ public class BinaryTree<T> {
 
 
 //	public void removeAllMatched(BinaryTree<T>pattern){
-//		removeAllMatched(this.root,pattern.root);
-//	}
-//
-//	private void removeAllMatched(BinaryNode<T>r,BinaryNode<T>parrtern){
 //
 //	}
 
-//	public BinaryNode<T>search(BinaryTree<T>pattern){
-//		if(pattern.isEmpty()){
-//			return null;
-//		}
-//		return search(this.root,pattern.root);
-//	}
-//
-//	public BinaryNode<T>search(BinaryNode<T>p,BinaryNode<T>q){
-//		if(p.data==q.data){
-//
-//		}
-//		return null;
-//	}
+	public BinaryNode<T>search(BinaryTree<T>pattern){
+		if(pattern.isEmpty()){
+			return null;
+		}
+		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
+		BinaryNode<T>p=this.root;
+		BinaryTree<T>tree=new BinaryTree<T>();
+		while(p!=null||!stack.isEmpty()){
+			if(p!=null){
+				tree.root=p;
+				if(tree.equals(pattern)){
+					return tree.root;
+				}
+				stack.push(p);
+				p=p.left;
+			}else {
+				p=stack.pop().right;//出栈的右子树
+			}
+		}
+		return null;
+	}
+
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+
+		if (obj instanceof BinaryTree<?>) {
+			BinaryTree<T> tree = (BinaryTree<T>) obj;
+			return this.toString().equals(tree.toString());
+		}
+		return false;
+	}
+
 
 	public static void main(String[] args) {
 		String[]prelist={"A","B","D",null,"G",null,null,null,"C","E",null,null,"F","H"};
 		String[]values={"A","B","C","D","E","F","G"};
+//		String[]values1={"B","D",null,"G",null,null,null};
+		String[]values1={"A","B","D"};
 		BinaryTree<String>bitree=new BinaryTree<String>(prelist);
 		BinaryTree<String>bitree1=new BinaryTree<String>(values);
+		BinaryTree<String>bitree2=new BinaryTree<String>(values1);
 		System.out.println("PRE:"+bitree.toString());
-		BinaryNode<String>z=new BinaryNode<>(null,"D",null);
-		BinaryNode<String>p=new BinaryNode<>(null,"B",null);
-		BinaryNode<String>q=new BinaryNode<>(p,"A",z);
 
 		System.out.println("bitree:"+bitree.search("F"));
 		bitree.printGenList();
-		bitree1.preorder();
 		bitree.postorder();
 		bitree.postorderTraverse();
 		System.out.println();
 		bitree.inorder();
 		bitree.inorderTraverse();
+		System.out.println();
+		System.out.println(bitree.search(bitree2));
 	}
 }
  
