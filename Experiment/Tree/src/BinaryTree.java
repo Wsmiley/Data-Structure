@@ -330,78 +330,6 @@ public class BinaryTree<T> {
 		return false;
 	}
 
-
-//	public BinaryNode<T>search(BinaryTree<T>pattern) {
-//		if (pattern.isEmpty() || isEmpty()) {
-//			return null;
-//		}
-//		LinkedStack<BinaryNode<T>> Gstack = new LinkedStack<BinaryNode<T>>();
-//		LinkedStack<BinaryNode<T>> Pstack = new LinkedStack<BinaryNode<T>>();
-//		LinkedStack<BinaryNode<T>> Gchildstack = new LinkedStack<BinaryNode<T>>();
-//		BinaryNode<T> G = this.root;
-//		BinaryNode<T> Gchild;
-//		BinaryNode<T> P = pattern.root;
-//		while (G != null || !Gstack.isEmpty()) {
-//			if (G != null) {
-//				Gchild = G;
-//
-//				while (Gchild  !=null || !Gchildstack.isEmpty()) {
-//
-//					while (!Pstack.isEmpty() || P != null) {
-//
-//						if (Gchild != null) {
-//
-//							if (P != null) {
-//								if (Gchild.data.equals(P.data)) {
-//									Gchildstack.push(Gchild);
-//									Gchild = Gchild.left;
-//									Pstack.push(P);
-//									P = P.left;
-//								} else {
-//									Gchildstack.clear();
-//									P=pattern.root;
-//									Pstack.clear();
-//									break;
-//								}
-//							} else {
-//								Gchild=Gchildstack.pop().right;
-//								P=Pstack.pop().right;
-//							}
-//						}else {
-//
-//							if (P==null){
-//								Gchild=Gchildstack.pop().right;
-//								P=Pstack.pop().right;
-//							}else {
-//								//当Gchild==null时，判断p是否为null，不是则回到G
-//								Gchildstack.clear();
-//								P=pattern.root;
-//								Pstack.clear();
-//								break;
-//							}
-//						}
-//
-//					}
-//					Gstack.push(G);
-//					G=G.left;
-//					Gchild=G;
-//				}
-//
-//			}else {
-//				G=Gstack.pop().right;
-//			}
-//		}
-//
-//		if(P==null&&Pstack.isEmpty()){
-//			while (!Gchildstack.isEmpty()){
-//				G=Gchildstack.pop();
-//			}
-//			return G;
-//		}
-//		return null;
-//	}
-
-
 //	public BinaryNode<T>search(BinaryTree<T>pattern){
 //		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
 //		BinaryNode<T>p=this.root;
@@ -422,7 +350,7 @@ public class BinaryTree<T> {
 //	private boolean panduan(BinaryNode<T>R,BinaryTree<T>pattern){
 //		LinkedStack<BinaryNode<T>>Rstack=new LinkedStack<BinaryNode<T>>();
 //		LinkedStack<BinaryNode<T>>Pstack=new LinkedStack<BinaryNode<T>>();
-//		BinaryNode<T>geng=R;
+//		BinaryNode<T>geng=R;s
 //		BinaryNode<T>p=pattern.root;
 //		while ((p!=null||!Pstack.isEmpty())&&(geng!=null||!Rstack.isEmpty())){
 //			if(geng!=null&&p!=null&&geng.data.equals(p.data)){
