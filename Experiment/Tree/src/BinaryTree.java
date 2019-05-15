@@ -236,6 +236,49 @@ public class BinaryTree<T> {
 		return (Lh>Rh)?Lh+1:Rh+1;
 	}
 
+	//	public BinaryNode<T>search(BinaryTree<T>pattern){
+//		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
+//		BinaryNode<T>p=this.root;
+//		while(p!=null||!stack.isEmpty()){
+//			if(p!=null){
+//				if (panduan(p,pattern)){
+//					return p;
+//				}
+//				stack.push(p);
+//				p=p.left;
+//			}else {
+//				p=stack.pop().right;
+//			}
+//		}
+//		return null;
+//	}
+
+//	private boolean panduan(BinaryNode<T>R,BinaryTree<T>pattern){
+//		LinkedStack<BinaryNode<T>>Rstack=new LinkedStack<BinaryNode<T>>();
+//		LinkedStack<BinaryNode<T>>Pstack=new LinkedStack<BinaryNode<T>>();
+//		BinaryNode<T>geng=R;s
+//		BinaryNode<T>p=pattern.root;
+//		while ((p!=null||!Pstack.isEmpty())&&(geng!=null||!Rstack.isEmpty())){
+//			if(geng!=null&&p!=null&&geng.data.equals(p.data)){
+//				Rstack.push(geng);
+//				geng=geng.left;
+//				Pstack.push(p);
+//				p=p.left;
+//			}else {
+//				if(geng==null&&p==null){
+//					geng=Rstack.pop().right;
+//					p=Pstack.pop().right;
+//				}else {
+//					return false;
+//				}
+//			}
+//			if(p==null&&Pstack.isEmpty()){
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
+
 	public void printGenList(){
 		System.out.print("二叉树的广义表表示:");
 		printGenList(this.root);
@@ -330,48 +373,7 @@ public class BinaryTree<T> {
 		return false;
 	}
 
-//	public BinaryNode<T>search(BinaryTree<T>pattern){
-//		LinkedStack<BinaryNode<T>>stack=new LinkedStack<BinaryNode<T>>();
-//		BinaryNode<T>p=this.root;
-//		while(p!=null||!stack.isEmpty()){
-//			if(p!=null){
-//				if (panduan(p,pattern)){
-//					return p;
-//				}
-//				stack.push(p);
-//				p=p.left;
-//			}else {
-//				p=stack.pop().right;
-//			}
-//		}
-//		return null;
-//	}
 
-//	private boolean panduan(BinaryNode<T>R,BinaryTree<T>pattern){
-//		LinkedStack<BinaryNode<T>>Rstack=new LinkedStack<BinaryNode<T>>();
-//		LinkedStack<BinaryNode<T>>Pstack=new LinkedStack<BinaryNode<T>>();
-//		BinaryNode<T>geng=R;s
-//		BinaryNode<T>p=pattern.root;
-//		while ((p!=null||!Pstack.isEmpty())&&(geng!=null||!Rstack.isEmpty())){
-//			if(geng!=null&&p!=null&&geng.data.equals(p.data)){
-//				Rstack.push(geng);
-//				geng=geng.left;
-//				Pstack.push(p);
-//				p=p.left;
-//			}else {
-//				if(geng==null&&p==null){
-//					geng=Rstack.pop().right;
-//					p=Pstack.pop().right;
-//				}else {
-//					return false;
-//				}
-//			}
-//			if(p==null&&Pstack.isEmpty()){
-//				return true;
-//			}
-//		}
-//		return false;
-//	}
 
 	private BinaryNode<T>search(BinaryTree<T>pattern) {
 		if (pattern.isEmpty() || isEmpty()) {
@@ -427,7 +429,6 @@ public class BinaryTree<T> {
 	}
 
 	public static void main(String[] args) {
-//		String[]values={"A","B","D"};
 		String[]prelist={ "A","B","D",null,"G",null,null,null,"C","E",null,null,"F","H"};
 		String[]values={"B","D",null,"G",null,"c"};
 		BinaryTree<String>bitree=new BinaryTree<String>(prelist);
