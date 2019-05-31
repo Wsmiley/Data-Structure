@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="198741cc-ab98-4ba1-b6dd-945f2067567e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="198741cc-ab98-4ba1-b6dd-945f2067567e" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +23,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="652">
               <caret line="410" column="43" lean-forward="true" selection-start-line="410" selection-start-column="43" selection-end-line="410" selection-end-column="43" />
+=======
+            <state relative-caret-position="980">
+              <caret line="376" column="25" lean-forward="true" selection-start-line="376" selection-start-column="25" selection-end-line="376" selection-end-column="25" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#320#321#0" expanded="true" />
@@ -38,8 +47,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../LinearTable/src/SinglyList.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="936">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
+=======
+            <state relative-caret-position="1800">
+              <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#279#280#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
@@ -103,10 +117,17 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="2364" />
     <option name="y" value="102" />
     <option name="width" value="1551" />
     <option name="height" value="879" />
+=======
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -114,8 +135,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +178,11 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< Updated upstream
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,16 +257,21 @@
       <workItem from="1556269177869" duration="2672000" />
       <workItem from="1556447187889" duration="10902000" />
       <workItem from="1556458184550" duration="679000" />
+<<<<<<< Updated upstream
       <workItem from="1556617206542" duration="266000" />
       <workItem from="1557394798015" duration="11158000" />
       <workItem from="1557467056186" duration="6801000" />
       <workItem from="1557475446217" duration="8920000" />
       <workItem from="1557524545989" duration="10026000" />
       <workItem from="1557900087938" duration="53000" />
+=======
+      <workItem from="1559293406968" duration="82000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="67159000" />
   </component>
   <component name="ToolWindowManager">
@@ -245,6 +279,15 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06979167" />
+=======
+    <option name="totallyTimeSpent" value="30017000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373698" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -364,6 +407,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../LinearTable/src/SinglyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../LinearTable/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -399,6 +453,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/../LinearTable/src/SinglyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
@@ -418,6 +473,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="376" column="25" lean-forward="true" selection-start-line="376" selection-start-column="25" selection-end-line="376" selection-end-column="25" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#359#360#0" expanded="true" />
