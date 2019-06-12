@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e6ef8ab-154b-43a7-ac8f-85f5dde20bfb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/CirSinglyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/SortedCirDoublyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinearTable/src/CirSinglyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/src/CirSinglyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinearTable/src/SortedCirDoublyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/src/SortedCirDoublyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matrix/out/production/Matrix/Matriix.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/out/production/Tree/CirSinglyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/out/production/Tree/SortedCirDoublyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/src/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/src/BinaryNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,38 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AbstractGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MatrixGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../LinearTable/src/SinglyList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../LinearTable/src/SeqList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -64,6 +47,11 @@
   </component>
   <component name="FindBugs-IDEA-Workspace">
     <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>public abs</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -83,10 +71,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -121,14 +109,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559292585535" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559793912851" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Matrix/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -149,6 +137,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="MatrixGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MatrixGraph" />
+      <module name="Graph" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MatrixGraph" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -165,17 +167,26 @@
       <workItem from="1559291983111" duration="241000" />
       <workItem from="1559292335859" duration="143000" />
       <workItem from="1559292500092" duration="266000" />
+      <workItem from="1559294132380" duration="229000" />
+      <workItem from="1559294931903" duration="18000" />
+      <workItem from="1559646414416" duration="2560000" />
+      <workItem from="1559650072758" duration="75000" />
+      <workItem from="1559650705369" duration="1890000" />
+      <workItem from="1559653317589" duration="887000" />
+      <workItem from="1559727072043" duration="653000" />
+      <workItem from="1560161818944" duration="45000" />
+      <workItem from="1560255288869" duration="36000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2679000" />
+    <option name="totallyTimeSpent" value="9072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -184,7 +195,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -196,6 +207,7 @@
       <window_info anchor="bottom" id="Statistic" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -212,31 +224,42 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../LinearTable/src/SeqList.java">
+    <entry file="file://$PROJECT_DIR$/../Matrix/src/Matriix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="966">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../LinearTable/src/SinglyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="541">
+          <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LinearTable/src/SeqList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
+          <folding>
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AbstractGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+        <state relative-caret-position="238">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MatrixGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
         </state>
       </provider>
     </entry>

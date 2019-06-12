@@ -33,8 +33,6 @@ public class SortedCirDoublyList<T extends Comparable<? super T>>extends CirDoub
 		p.prev=q;
 		return q;
 	}
-	public static void main(String[] args) {
 
-	}
 }
  

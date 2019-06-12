@@ -43,8 +43,10 @@ public abstract  class AbstractGraph<T> {
 	}
 
 	public abstract int insertVertex(T x);//插入元素为x的顶点，返回x顶点的序号
-	public abstract void removeVertex(int i);//删除顶点Vi以及其所有关联的边
+	public abstract void removeVertex(T x);//删除顶点Vi以及其所有关联的边
+	public abstract void insertedges(Triple edge);//插入元素为x的顶点，返回x顶点的序号
 	public abstract int weight(int i,int j);//返回<Vi,Vj>边的权值
 	protected abstract int next(int i,int j);//返回Vi在Vj后的后续邻接顶点序号。
+	public abstract void removeEdge(Triple edge);//删除顶点Vi以及其所有关联的边
 }
  

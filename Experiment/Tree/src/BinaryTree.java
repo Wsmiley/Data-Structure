@@ -430,7 +430,7 @@ public class BinaryTree<T> {
 
 	public static void main(String[] args) {
 		String[]prelist={ "A","B","D",null,"G",null,null,null,"C","E",null,null,"F","H"};
-		String[]values={"B","D",null,"G",null,"c"};
+		String[]values={"B","D",null,"G",null} ;
 		BinaryTree<String>bitree=new BinaryTree<String>(prelist);
 		BinaryTree<String>bitree1=new BinaryTree<String>(values);
 		System.out.println(bitree.toString());

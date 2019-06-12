@@ -29,7 +29,7 @@ public class BinaryNode<T> {
 		return this.data.toString();
 	}
 	//判断是否叶子节点
-	public boolean isLeft(){
+	public boolean isLeaves(){
 		return this.left==null&&this.right==null;
 	}
 	public BinaryNode<T>getLeft(){

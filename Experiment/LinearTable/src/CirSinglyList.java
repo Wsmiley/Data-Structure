@@ -248,52 +248,16 @@ public class CirSinglyList<T> extends SinglyList<T> {
 
 
 	public static void main(String[] args) {
-		String values[] = { "A", "B", "C", "D", "F", "G" };
-		String values1[] = { "H", "I", "J", "K" };
-////
-		CirSinglyList<String> p = new CirSinglyList<String>(values);
-		System.out.println(p.toString());
-		CirSinglyList<String> q = new CirSinglyList<String>(p);
-		System.out.println(p.toString());
-		q.insert("H");
-		System.out.println(q.toString());
-		CirSinglyList<String> f = new CirSinglyList<String>(values1);
-		SinglyList<String> a = new SinglyList<String>(values1);
-		System.out.println(a.toString());
-		CirSinglyList<String> b = new CirSinglyList<String>(a);
-		a.insert("L");
-//		System.out.println(p.containsAll(q));
-//		System.out.println(b.toString());
-//		System.out.println(a.toString());
-//
-//		CirSinglyList<String> c = p;
-//		System.out.println(c.equals(p));
-//
-//		SinglyList<String> e = new CirSinglyList<String>(values);
-//		System.out.println(e.toString());
-//		CirSinglyList<String> d = new CirSinglyList<String>(values);// 换e不行
-//		System.out.println("d" + d.toString());
-//		System.out.println(d.equals(e));
-//		q.print();
-//		System.out.println("");
-//		q.addAll(f);
-//		q.print();
-//		System.out.println("");
-//		q.remove(10);
-//		q.print();
-//		System.out.println();
 
 		String values2[] = { "A", "B", "C", "D", "E","F"};
 		String values3[] = { "C", "D","E"};
-//		String values2[] = { "A", "A", "A", "A" };
-//		String values3[] = { "A","A"};
+
 		CirSinglyList<String> test = new CirSinglyList(values2);
 		CirSinglyList<String> test1 = new CirSinglyList(values3);
-		System.out.println(test.containsAll(test1));
 		System.out.println("test:" + test.toString());
 		System.out.println("test1:" + test1.toString());
 		test.removeAllMatched(test1);
-		System.out.println("test:" + test.toString());
+		System.out.println("After removeAllMatched the test:" + test.toString());
 	}
 }
 
