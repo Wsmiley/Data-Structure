@@ -16,25 +16,23 @@
  */
 public class BinaryTreeGlist {
 
-//	public TriTNode<T> root;
-
 	public static TriTNode<String> create(String genlist){
 
-				TriTNode rootNode=null;
-				TriTNode currentNode=null;
+		TriTNode rootNode=null;
+		TriTNode currentNode=null;
 
-				int flag=0;
-				int index=0;
+		int flag=0;//广义表转换二叉树的左右子树case标志
+		int index=0;//循环
 
-				int backparent=0;//判断到底是否需要返回父结点，0返回，1不返回
-				final int LeftChild=1;
-				final int RightChild=2;
+		int backparent=0;//判断到底是否需要返回父结点，0返回，1不返回
+		final int LeftChild=1;
+		final int RightChild=2;
 
-				while(index<genlist.length()){
-
-					char c=genlist.charAt(index++);
+		while(index<genlist.length()){
+			char c=genlist.charAt(index++);
 
 			switch (c){
+
 				case '(':
 					flag=LeftChild;
 					break;
@@ -79,34 +77,161 @@ public class BinaryTreeGlist {
 		return rootNode;
 	}
 
-//	public static void printGenList(TriTNode root){
-//		System.out.print("二叉树的广义表表示");
+	/*不用栈遍历二叉树*/
+
+//	public static void printGenList1(TriTNode root){
+//
 //		TriTNode p=root;
-//		while(p!=null){
+//		TriTNode q=p;
 //
+//		int index=1;//需要返回到第几个父母
+//		int count=0;//记录是否跳出循环
+//
+//		while (true){
+//
+//			if(q!=null){
+//				System.out.print(q.data.toString());
+//				q=q.leftchild;
+//				if(q!=null){//类似进栈一样
+//					if(!q.isLeaves())
+//						p=q;
+//				}
+//			}else {
+//				q = p.rightchild;
+//				if (q != null) {
+//					index++;
+//					p = q;
+//				}else {
+//					for(int i=0;i<index;i++){
+//						p=p.parent;
+//						if(p==root){
+//							index=0;
+//							count++;
+//							if(count==2){
+//								break;
+//							}
+//						}
+//					}
+//
+//				}
+//			}
+//			if(count==2)
+//				break;
 //		}
-//
-//		System.out.println();
 //	}
 
+	/*已完成查bug*/
+//	public static void printGenList(TriTNode root){
+//
+//		TriTNode p=root;
+//		TriTNode q=p;
+//
+//		int index=1;//需要返回到第几个父母
+//		int count=0;//记录是否跳出循环
+//
+//		while (true){
+//
+//			if(q!=null){
+//				System.out.print(q.data.toString());
+//				if(q.isLeaves()&&q==q.parent.leftchild){
+//					System.out.print(",");
+//					if(q.parent.rightchild==null){
+//						System.out.print(")");
+//					}
+//				}
+//
+//				if(!q.isLeaves()){
+//					System.out.print("(");
+//					if(q.leftchild==null){
+//						System.out.print(",");
+//					}
+//				}
+//				if(q.isLeaves()&&q==q.parent.rightchild){
+//					System.out.print(")");
+//				}
+//				q=q.leftchild;
+//				if(q!=null){//类似进栈一样
+//					p=q;
+//				}
+//			}else {
+//				q = p.rightchild;
+//				if (q != null) {
+//					p = q;
+//					index++;
+//				}else {
+//					for(int i=0;i<index;i++){
+//						p=p.parent;
+//						if(p==root){//遍历完左子树，开始遍历右子树
+//							index=0;
+//							count++;
+//							if(count==1){
+//								System.out.print(",");
+//							}
+//							if(count==2){
+//								break;
+//							}
+//						}
+//					}
+//				}
+//			}
+//			if(count==2){
+//				System.out.print(")");
+//				break;
+//			}
+//		}
+//	}
 
 	public static void printGenList(TriTNode root){
-		System.out.print("二叉树的广义表表示:");
-		printGenList1(root);
-		System.out.println();
-	}
 
-	private static void printGenList1(TriTNode p){
-		if (p==null){
-			System.out.print("^");
-		}else {
-			System.out.print(p.data.toString()+"");
-			if(p.leftchild!=null||p.rightchild!=null){
-				System.out.print("(");
-				printGenList1(p.leftchild);
-				System.out.print(",");
-				printGenList1(p.rightchild);
+		TriTNode p=root;
+		TriTNode q=p;
+
+		int index=1;//需要返回到第几个父母
+		int count=0;//记录是否跳出循环
+		while (true){
+
+			if(q!=null){
+				System.out.print(q.data.toString());
+				if(q.isLeaves()&&q==q.parent.leftchild){
+					if(q.parent.rightchild==null){
+						System.out.print(",");
+						System.out.print(")");
+					}
+				}
+
+				if(!q.isLeaves()){
+					System.out.print("(");
+				}
+				if(q.isLeaves()&&q==q.parent.rightchild){
+					System.out.print(")");
+				}
+				q=q.leftchild;
+				if(q!=null){//类似进栈一样
+					if(!q.isLeaves())
+						p=q;
+				}
+			}else {
+				q = p.rightchild;
+				if (q != null) {
+					p = q;
+					index++;
+					System.out.print(",");
+				}else {
+					for(int i=0;i<index;i++){
+						p=p.parent;
+						if(p==root){//遍历完左子树，开始遍历右子树
+							index=0;
+							count++;
+							if(count==2){
+								break;
+							}
+						}
+					}
+				}
+			}
+			if(count==2){
 				System.out.print(")");
+				break;
 			}
 		}
 	}
@@ -114,12 +239,13 @@ public class BinaryTreeGlist {
 
 
 	public static void main(String[] args) {
-		String gLists = "(A(B(C,D),E(^,F)))";
+		String gLists = "(A(B(C,D),E(F,G(H,I)))";
 		TriTNode rootnode=BinaryTreeGlist.create(gLists);
-		System.out.println(rootnode);
 
+		System.out.println();
 		BinaryTreeGlist.printGenList(rootnode);
 
 	}
 }
+
 

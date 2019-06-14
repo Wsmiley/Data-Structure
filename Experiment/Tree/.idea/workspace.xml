@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b773ed66-5153-4fb1-94fc-fa9495415c08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Graph/src/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/src/AbstractGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graph/src/MatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/src/MatrixGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/CirSinglyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/out/production/LinearTable/SortedCirDoublyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinearTable/src/CirSinglyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/src/CirSinglyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinearTable/src/SortedCirDoublyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LinearTable/src/SortedCirDoublyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matrix/out/production/Matrix/Matriix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tree/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/BinaryNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tree/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/CirSinglyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tree/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/SortedCirDoublyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tree/BinaryTreeGlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/BinaryTreeGlist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tree/TriTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/TriTNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTreeGlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTreeGlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TriTNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TriTNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,15 +14,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Tree$BinaryTreeGlist.ic" NAME="BinaryTreeGlist Coverage Results" MODIFIED="1560434205973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTreeGlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="184">
+              <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TriTNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,24 +63,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/BinaryNode.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/TriTNode.java" />
-        <option value="$PROJECT_DIR$/src/BinaryNode.java" />
         <option value="$PROJECT_DIR$/src/BinaryTreeGlist.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="2432" />
+    <option name="y" value="142" />
+    <option name="width" value="1152" />
+    <option name="height" value="648" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,13 +105,12 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560259751356" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560483667348" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -156,15 +164,17 @@
       <workItem from="1560162665096" duration="3842000" />
       <workItem from="1560249382954" duration="5694000" />
       <workItem from="1560255327376" duration="4433000" />
-      <workItem from="1560318865243" duration="342000" />
+      <workItem from="1560318865243" duration="18460000" />
+      <workItem from="1560422365528" duration="11803000" />
+      <workItem from="1560478104681" duration="5406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15081000" />
+    <option name="totallyTimeSpent" value="50408000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -172,7 +182,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.140625" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1125" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -180,12 +190,12 @@
       <window_info anchor="bottom" id="Statistic" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.32746956" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32670158" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.20703654" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.53179973" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.2408377" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.38848168" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -199,10 +209,23 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3296875" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BinaryTreeGlist.java</url>
+          <line>245</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -226,17 +249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TriTNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -248,10 +260,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Java/JDK/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="2950" selection-start-line="2950" selection-end-line="2950" />
+          <folding>
+            <element signature="e#111947#111948#0" expanded="true" />
+            <element signature="e#111974#111975#0" expanded="true" />
+            <element signature="e#118101#118102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/JDK/lib/src.zip!/java.base/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/JDK/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="745" selection-start-line="745" selection-end-line="745" />
+          <folding>
+            <element signature="e#26596#26597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4058">
-          <caret line="352" column="45" selection-start-line="352" selection-start-column="45" selection-end-line="352" selection-end-column="45" />
+        <state relative-caret-position="329">
+          <caret line="265" column="25" lean-forward="true" selection-start-line="265" selection-start-column="18" selection-end-line="265" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#354#355#0" expanded="true" />
@@ -260,10 +301,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TriTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTreeGlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="184">
+          <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

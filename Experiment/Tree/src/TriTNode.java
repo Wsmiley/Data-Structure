@@ -31,6 +31,8 @@ public class TriTNode<T> {
 	public String toString(){
 		return this.data.toString();
 	}
+	public boolean LeftChild(){return this.leftchild!=null;}
+	public boolean RightChild(){return this.rightchild!=null;}
 	public boolean isLeaves(){
 		return this.leftchild==null&&this.rightchild==null;
 	}
