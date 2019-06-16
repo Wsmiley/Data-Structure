@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b773ed66-5153-4fb1-94fc-fa9495415c08" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/out/production/Tree/BinaryTreeGlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/BinaryTreeGlist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tree/TriTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tree/TriTNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinaryTreeGlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTreeGlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TriTNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TriTNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTreeGlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+            <state relative-caret-position="440">
+              <caret line="266" column="41" selection-start-line="266" selection-start-column="41" selection-end-line="266" selection-end-column="41" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -32,9 +30,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="431" column="89" selection-start-line="431" selection-start-column="8" selection-end-line="431" selection-end-column="89" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TriTNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="468">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#512#513#0" expanded="true" />
@@ -54,9 +66,6 @@
       </list>
     </option>
   </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -71,17 +80,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2432" />
-    <option name="y" value="142" />
-    <option name="width" value="1152" />
-    <option name="height" value="648" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,12 +113,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560483667348" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560667975335" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -166,15 +175,18 @@
       <workItem from="1560255327376" duration="4433000" />
       <workItem from="1560318865243" duration="18460000" />
       <workItem from="1560422365528" duration="11803000" />
-      <workItem from="1560478104681" duration="5406000" />
+      <workItem from="1560478104681" duration="5708000" />
+      <workItem from="1560592659748" duration="1259000" />
+      <workItem from="1560607808605" duration="3569000" />
+      <workItem from="1560663925808" duration="3930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50408000" />
+    <option name="totallyTimeSpent" value="59468000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -182,7 +194,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1125" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.111979164" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -190,12 +202,12 @@
       <window_info anchor="bottom" id="Statistic" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.32670158" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32611638" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.2408377" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.38848168" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.23951286" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.5683356" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -214,18 +226,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTreeGlist.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -289,21 +289,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+    <entry file="jar://C:/Java/JDK/lib/src.zip!/java.base/java/lang/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="265" column="25" lean-forward="true" selection-start-line="265" selection-start-column="18" selection-end-line="265" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143262">
+          <caret line="8003" selection-start-line="8003" selection-end-line="8003" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TriTNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="468">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#512#513#0" expanded="true" />
@@ -313,10 +308,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="431" column="89" selection-start-line="431" selection-start-column="8" selection-end-line="431" selection-end-column="89" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTreeGlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="202" column="42" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+        <state relative-caret-position="440">
+          <caret line="266" column="41" selection-start-line="266" selection-start-column="41" selection-end-line="266" selection-end-column="41" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
