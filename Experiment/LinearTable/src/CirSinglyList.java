@@ -249,16 +249,19 @@ public class CirSinglyList<T> extends SinglyList<T> {
 
 	public static void main(String[] args) {
 
-		String values2[] = { "A", "B", "C", "D", "E","F"};
-		String values3[] = { "C", "D","E"};
+		String values1[] = { "A", "B", "C", "D", "E","F"};
+		String values2[] = { "C", "D","E"};
 
-		CirSinglyList<String> test = new CirSinglyList(values2);
-		CirSinglyList<String> test1 = new CirSinglyList(values3);
+		CirSinglyList<String> test = new CirSinglyList(values1);
+		CirSinglyList<String> test1 = new CirSinglyList(values2);
 		System.out.println("test:" + test.toString());
 		System.out.println("test1:" + test1.toString());
-		test.removeAllMatched(test1);
-		System.out.println("After removeAllMatched the test:" + test.toString());
+		System.out.println("test containsall test1:"+test.containsAll(test1));
+
 	}
 }
 
+//
+//test.removeAllMatched(test1);
+//		System.out.println("After removeAllMatched the test:" + test.toString());
 

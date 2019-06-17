@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d9fa64-a3c9-46e5-b969-ac8ec4f86dc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Graph/src/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/src/AbstractGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graph/src/MatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/src/MatrixGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinearTable/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinearTable/CirSinglyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinearTable/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinearTable/SortedCirDoublyList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CirSinglyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CirSinglyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortedCirDoublyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedCirDoublyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matrix/out/production/Matrix/Matriix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/SortedCirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/out/production/Tree/SortedCirDoublyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CirSinglyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="259" column="29" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
+            <state relative-caret-position="98">
+              <caret line="241" column="19" lean-forward="true" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#593#594#0" expanded="true" />
@@ -77,10 +69,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -88,7 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +107,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,17 +254,19 @@
       <workItem from="1559650408399" duration="222000" />
       <workItem from="1559650690851" duration="4000" />
       <workItem from="1560162381357" duration="280000" />
+      <workItem from="1560670351024" duration="197000" />
+      <workItem from="1560675905501" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10536000" />
+    <option name="totallyTimeSpent" value="10780000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -281,7 +275,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25445026" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25439784" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39895287" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,7 +287,7 @@
       <window_info anchor="bottom" id="Statistic" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CirSinglyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="259" column="29" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
+        <state relative-caret-position="98">
+          <caret line="241" column="19" lean-forward="true" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#593#594#0" expanded="true" />
