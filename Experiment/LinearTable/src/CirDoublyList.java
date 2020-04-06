@@ -14,10 +14,11 @@
  * @create 2019/3/29
  * @since 1.0.0
  */
-public class CirDoublyList<T> extends DoublyList<T>{
+public class CirDoublyList<T>{
+	public DoubleNode<T>head;
 
 	public CirDoublyList(){
-		super();
+		this.head=new DoubleNode<>();
 		this.head.next=head;
 		this.head.prev=head;
 	}
@@ -32,6 +33,20 @@ public class CirDoublyList<T> extends DoublyList<T>{
 		rear.next=this.head;
 		this.head.prev=rear;
 	}
+
+
+	public CirDoublyList(CirDoublyList<T> list)
+	{
+		this();
+		DoubleNode<T> rear = this.head;
+		for (DoubleNode<T> p=list.head.next;  p!=list.head;  p=p.next)
+		{
+			rear.next = new DoubleNode<T>(rear,p.data, this.head);
+			rear = rear.next;
+		}
+		this.head.prev = rear;
+	}
+
 	public boolean isEmpty(){
 		return this.head.next==this.head;
 	}

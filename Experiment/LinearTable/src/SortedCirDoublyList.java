@@ -20,6 +20,17 @@ public class SortedCirDoublyList<T extends Comparable<? super T>>extends CirDoub
 		super();
 	}
 
+	public SortedCirDoublyList(SortedCirDoublyList<T> list)
+	{
+		super(list);
+	}
+	public SortedCirDoublyList(CirDoublyList<T> list)
+	{
+		super();
+		for (DoubleNode<T> p=list.head.next;  p!=list.head;  p=p.next)
+			this.insert(p.data);
+	}
+
 	public DoubleNode<T>insert(T x){
 		if(this.isEmpty()||x.compareTo(this.head.prev.data)>0){
 			return super.insert(x);

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d9fa64-a3c9-46e5-b969-ac8ec4f86dc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/LinearTable/CirSinglyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinearTable/CirSinglyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CirSinglyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CirSinglyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinearTable/CirDoublyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinearTable/CirDoublyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinearTable/SortedCirDoublyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CirDoublyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CirDoublyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortedCirDoublyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedCirDoublyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/BinaryTreeGlist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/CirDoublyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/PriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/out/production/Tree/SortedCirDoublyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/src/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree/src/BinaryTreeGlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/src/BinaryTreeGlist.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,14 +26,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CirSinglyList.java">
+        <entry file="file://$PROJECT_DIR$/src/CirDoublyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="241" column="19" lean-forward="true" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+            <state relative-caret-position="432">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DoubleNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,11 +75,16 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/SeqList.java" />
         <option value="$PROJECT_DIR$/src/SinglyList.java" />
-        <option value="$PROJECT_DIR$/src/CirDoublyList.java" />
         <option value="$PROJECT_DIR$/src/DoublyList.java" />
-        <option value="$PROJECT_DIR$/src/SortedCirDoublyList.java" />
         <option value="$PROJECT_DIR$/src/Addible.java" />
         <option value="$PROJECT_DIR$/src/CirSinglyList.java" />
+        <option value="$PROJECT_DIR$/src/CirDoublyListTest.java" />
+        <option value="$PROJECT_DIR$/src/TermX.java" />
+        <option value="$PROJECT_DIR$/src/CirDoublyList.java" />
+        <option value="$PROJECT_DIR$/src/SortedCirDoublyList.java" />
+        <option value="$PROJECT_DIR$/src/Polynomial.java" />
+        <option value="$PROJECT_DIR$/src/TermXY.java" />
+        <option value="$PROJECT_DIR$/src/PolyDoubleList.java" />
       </list>
     </option>
   </component>
@@ -71,8 +97,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1099" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -80,6 +106,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LinearTable" type="58d84e3e:PackageViewProjectNode" />
+              <item name="LinearTable" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,27 +133,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LinearTable" type="58d84e3e:PackageViewProjectNode" />
-              <item name="LinearTable" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560162619882" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561211694181" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DoublyList1" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -137,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CirSinglyList">
+  <component name="RunManager" selected="Application.CirDoublyList">
     <configuration name="Addible" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Addible" />
       <module name="LinearTable" />
@@ -211,10 +237,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CirSinglyList" />
-        <item itemvalue="Application.Addible" />
-        <item itemvalue="Application.DoublyList" />
         <item itemvalue="Application.CirDoublyList" />
+        <item itemvalue="Application.Addible" />
+        <item itemvalue="Application.CirSinglyList" />
+        <item itemvalue="Application.DoublyList" />
         <item itemvalue="Application.DoublyJosephus" />
       </list>
     </recent_temporary>
@@ -256,17 +282,23 @@
       <workItem from="1560162381357" duration="280000" />
       <workItem from="1560670351024" duration="197000" />
       <workItem from="1560675905501" duration="47000" />
+      <workItem from="1560839752625" duration="1583000" />
+      <workItem from="1560844405542" duration="2670000" />
+      <workItem from="1560903780276" duration="1336000" />
+      <workItem from="1561211681906" duration="46000" />
+      <workItem from="1561213254106" duration="28000" />
+      <workItem from="1561213514911" duration="22000" />
+      <workItem from="1561213836358" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10780000" />
+    <option name="totallyTimeSpent" value="16486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111979164" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18489583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -304,18 +336,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SeqList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1935#1936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/JDK/lib/src.zip!/java.base/java/lang/Comparable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -334,48 +354,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SinglyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2502">
-          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoubleNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoublyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-          <folding>
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DoublyJosephus.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Josephus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" selection-start-line="26" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -389,17 +369,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortedCirDoublyList.java">
+    <entry file="file://$PROJECT_DIR$/CirDoublyList.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoublyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="663">
+          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CirDoublyList.java">
+    <entry file="file://$PROJECT_DIR$/src/SeqList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="342">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Josephus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CirDoublyList1.java" />
+    <entry file="file://$PROJECT_DIR$/src/CirDoublyListTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/CirSinglyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SinglyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -408,19 +428,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Addible.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CirSinglyList.java">
+    <entry file="file://$PROJECT_DIR$/src/Polynomial.java" />
+    <entry file="file://$PROJECT_DIR$/src/TermXY.java" />
+    <entry file="file://$PROJECT_DIR$/src/TermX.java" />
+    <entry file="file://$PROJECT_DIR$/src/SortedCirDoublyList.java" />
+    <entry file="file://$PROJECT_DIR$/src/PolyDoubleList.java" />
+    <entry file="file://$PROJECT_DIR$/src/CirDoublyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="241" column="19" lean-forward="true" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+        <state relative-caret-position="432">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoubleNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -16,8 +16,6 @@
  */
 public class BinaryTreeGlist {
 
-
-
 	public static TriTNode<String> create(String genlist){
 
 		TriTNode rootNode=null;
@@ -75,7 +73,7 @@ public class BinaryTreeGlist {
 		return rootNode;
 	}
 
-//	/*类似递归思想,(,)的条件匹配上*/
+	/*类似递归思想,(,)的条件匹配上*/
 //	public static void printGenList(TriTNode root) {
 //		TriTNode p;
 //		TriTNode pr;
@@ -127,7 +125,7 @@ public class BinaryTreeGlist {
 //		System.out.print(")");
 //	}
 
-	public static void printGenList(TriTNode root){
+	public static void printGenList1(TriTNode root){
 		TriTNode p,pr;
 		p = root;
 		System.out.print("二叉树的广义表表示:");
@@ -146,20 +144,20 @@ public class BinaryTreeGlist {
 					do {
 						pr = p;
 						p = p.parent;
-						if(p!=null&&pr!=p.leftchild) { ;
-							System.out.print(")");
-						}
-						if(p==null)
-							System.out.print(")");
-						if (p!=null&&p.rightchild==null){
-							System.out.print(",");
-							System.out.print("^");
-							System.out.print(")");
-						}
-					} while (p != null && (p.leftchild != pr || p.rightchild == null));
+					if(p!=null&&pr!=p.leftchild) { ;
+						System.out.print(")");
+					}
+//						if(p==null)
+//							System.out.print(")");
+					if (p!=null&&p.rightchild==null){
+						System.out.print(",");
+						System.out.print("^");
+						System.out.print(")");
+					}
+				} while (p != null && (p.leftchild != pr || p.rightchild == null));
 					if (p != null) {
 						System.out.print(",");
-						p = p.rightchild;
+						p = p.rightchild;//最后p==null,会空异常
 					}
 				}
 			}
@@ -170,9 +168,12 @@ public class BinaryTreeGlist {
 
 	public static void main(String[] args) {
 		String gLists = "A(B(C,D),E(F,G(H,I)))";
+		String gLists1 = "A(B(^,D),E(F,G(H,^)))";
 		TriTNode rootnode=BinaryTreeGlist.create(gLists);
-		BinaryTreeGlist.printGenList(rootnode);
+		TriTNode rootnode1=BinaryTreeGlist.create(gLists1);
+		BinaryTreeGlist.printGenList1(rootnode);
 		System.out.println();
+		BinaryTreeGlist.printGenList1(rootnode1);
 	}
 }
 
